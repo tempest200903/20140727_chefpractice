@@ -8,3 +8,5 @@ curl -L https://www.opscode.com/chef/install.sh | sudo bash
 
 chef-solo -v
 chap 2.4 end
+chap 2.4 begin
+sudo knife cookbook create hello -o /vagrant/var/chef/cookbooks
