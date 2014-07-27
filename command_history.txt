@@ -1,0 +1,4 @@
+echo chapter 2.2
+vagrant init centos64_64
+Vagrantfile config.vm.network :private_network, ip: "192.168.33.20"
+vagrant up

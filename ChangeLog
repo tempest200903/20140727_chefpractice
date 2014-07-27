@@ -1,4 +1,6 @@
 2014-07-27    <s@g>
 
-	* Vagrantfile: Create this file by command "vagrant init centos64_64".
+	* Vagrantfile:
+	(1) Create this file by command "vagrant init centos64_64".
+	(2) change to `config.vm.network :private_network, ip: "192.168.33.20"`
 
