@@ -2,3 +2,9 @@ echo chapter 2.2
 vagrant init centos64_64
 Vagrantfile config.vm.network :private_network, ip: "192.168.33.20"
 vagrant up
+vagrant ssh
+echo chapter 2.3 begin
+curl -L https://www.opscode.com/chef/install.sh | sudo bash
+
+chef-solo -v
+chap 2.4 end
