@@ -11,3 +11,10 @@ chap 2.4 end
 chap 2.4 begin
 sudo knife cookbook create hello -o /vagrant/var/chef/cookbooks
 chap 2.4 end
+chap 2.5 begin
+sudo knife cookbook create dstat -o /var/chef/cookbooks
+vi /var/chef/cookbooks/dstat/recipes/default.rb
+sudo chef-solo -o hello,dstat
+rpm -q dstat
+sudo chef-solo -o hello,dstat
+chap 2.5 end
